@@ -1,35 +1,25 @@
 class Solution {
     public boolean isValid(String s) {
-        boolean answer = true;
         Stack<Character> stack = new Stack<>();
 
-        if(s.length() == 1) return false;
-
         for(char c : s.toCharArray()) {
-
             if(c == '(' || c=='[' || c=='{') {
                 stack.push(c);
             } else {
-                if(stack.size() == 0) {
-                    answer = false;
-                    break;
-                }
-                
-                char cFromStack = stack.pop();
-                if(!isMatched(c, cFromStack)) {
-                    answer = false;
-                    break;
-                }
+                if(stack.isEmpty()) return false;
+
+                char open = stack.pop();
+                if(!isMatched(open, c)) return false;
             }
         }
 
-        return stack.size() != 0 ? false : answer;
+        return stack.isEmpty();
     }
 
-    private boolean isMatched(char c, char cFromStack) {
-        if(c == ')' && cFromStack == '(') return true;
-        else if(c == ']' && cFromStack == '[') return true;
-        else if(c == '}' && cFromStack == '{') return true;
+    private boolean isMatched(char open, char close) {
+        if(open == '(' && close == ')') return true;
+        else if(open == '[' && close == ']') return true;
+        else if(open == '{' && close == '}') return true;
         else return false;
     }
 }
