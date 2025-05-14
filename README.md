@@ -46,6 +46,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0020-valid-parentheses](https://github.com/HK-An/LeetCode/tree/master/0020-valid-parentheses) |
+| [0155-min-stack](https://github.com/HK-An/LeetCode/tree/master/0155-min-stack) |
 ## Linked List
 |  |
 | ------- |
@@ -65,4 +66,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0088-merge-sorted-array](https://github.com/HK-An/LeetCode/tree/master/0088-merge-sorted-array) |
 | [0141-linked-list-cycle](https://github.com/HK-An/LeetCode/tree/master/0141-linked-list-cycle) |
 | [0283-move-zeroes](https://github.com/HK-An/LeetCode/tree/master/0283-move-zeroes) |
+## Design
+|  |
+| ------- |
+| [0155-min-stack](https://github.com/HK-An/LeetCode/tree/master/0155-min-stack) |
 <!---LeetCode Topics End-->
